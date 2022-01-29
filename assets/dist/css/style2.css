@@ -1,0 +1,512 @@
+.btnsolid {
+    border-radius: 0.52em;
+    padding: 0.5rem 1.17rem;
+  }
+
+
+  .btn-keep {
+    padding: 1rem 2rem;
+    border-radius: 0.52em 0 0 0.52rem;
+    background-color: white;
+    border: none;
+    box-shadow: -5px 5px 4px var(--ut-light-grey);
+    position: fixed;
+    /*right: 4%;*/
+  }
+
+  .btn-edit {
+    padding: 1rem; 
+    width: 140px; 
+    right: 0%;
+  }
+  
+  .btncreator {
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  
+ /* .clock-icon {
+    width: 20px;
+    height: 20px;
+  }*/
+
+  .txtTools {
+    border: 2px solid var(--ut-secondary);
+    padding: 0.5rem 1.17rem;
+    background-color: white;
+    color: var(--ut-primary);
+  }
+
+  .btn-fr-skill {
+    border: 2px solid var(--ut-red);
+    padding: 0.5rem 1.17rem;
+    background-color: white;
+    color: var(--ut-primary);
+    margin-right: 10px;
+  }
+
+  .btn-send {
+    border:none; 
+    background-color:white; 
+    color: var(--ut-primary);
+  }
+  
+  i.btn-rotate {
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    transform: rotate(-45deg);
+  }
+
+  .txtSteps {
+    border: none;
+    color: white;
+    background-color: var(--ut-primary);
+    margin-inline: 0.2em;
+  }
+  
+  #table1 {
+    border-collapse: separate;
+    /*border-spacing:10px*/
+    
+    border-spacing: 0px 0.7rem;
+  }
+  
+  .table-td-sm {
+    width: 7%;
+    color: white;
+    text-align: center;
+  }
+  
+  .table-td-lg {
+    color: black;
+    background-color: white;
+    padding: 2rem 1.17rem;
+  }
+
+  .btn-creative-tech {
+    width: 100%;
+    background-color: white;
+    border: 2px solid;
+    padding: 0.2rem 1.17rem;
+    text-align: center;
+  }
+  /*--------chitchat-------*/
+  .suggest-box {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    margin-bottom: 2%;
+  }
+
+  .chitchat-box {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    margin-bottom: 2%;
+  }
+
+  .chitchat-box-sub {
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem 1.17rem;
+    margin-top: 10px;
+  }
+
+  .boxline {
+    border-top: 1px solid var(--ut-md-grey);
+    padding-top: 2%;
+  }
+
+  .leave-comment {
+    width:100%; 
+    height:100px;
+    padding-top: 2%;
+    border: none;
+    margin-bottom: 5%;
+  }
+
+  .btn-right {
+    float: right;
+  }
+
+  /*-------Endchitchat ----------*/
+
+
+/*-------------------------------------- Slide Gallery--------------------------------------*/
+
+  /* Position the image container (needed to position the left and right arrows) */
+
+  .container-gallery {
+    position: relative;
+  }
+
+  img.resize {
+    width: 100%;
+    height: 25em;
+    /*height:20em;*/
+    border-radius: 0.52em;
+    object-fit: cover;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  /* Six columns side by side */
+  .column-gallery {
+    /*float:left;*/
+    width: 20%;
+    /*margin-left: 2%;*/
+    /*padding-left: 2%;
+    padding-right: 2%;*/
+  }
+
+  .thumbnail-img {
+    width: 5em;
+    height: 5em;
+    border-radius: 0.52em;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/*--------------------------------------End Slide Gallery--------------------------------------*/
+
+
+/*------------Responsive Screen---------------*/
+
+
+.item-image {
+  grid-area: image;
+}
+
+.item-technique {
+  grid-area: tech;
+}
+
+.item-name {
+  grid-area: name;
+}
+
+.item-story {
+  grid-area: story;
+}
+
+.item-steps {
+  grid-area: steps;
+}
+
+.item-problem {
+  grid-area: problem;
+} 
+
+.item-suggest {
+  grid-area: suggest;
+}
+
+.item-wrapper {
+  display: grid;
+  gap: 20px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "name"
+    "image"
+    "story"
+    "tech"
+    "steps";
+}
+
+.help-wrapper {
+  display: grid;
+  margin-bottom: 5%;
+  gap: 20px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "name"
+    "image"
+    "problem"
+    "suggest"
+    "story"
+    "steps"
+    "tech";
+}
+
+.item-wrapper > .item-name {
+  grid-area: name;
+}
+
+.item-wrapper > .item-image {
+  grid-area: image;
+}
+
+.item-wrapper > .item-technique {
+  grid-area: tech;
+}
+
+.item-wrapper > .item-story {
+  grid-area: story;
+}
+
+.item-wrapper > .item-steps {
+  grid-area: steps;
+}
+
+
+@media (min-width: 992px) {
+  .item-wrapper {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "image name"
+      "image story"
+      "tech steps"
+      "tech steps";
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .help-wrapper {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "image  name"
+      "image  problem"
+      "story  suggest"
+      "steps  suggest"
+      "tech   suggest";
+      grid-template-rows: auto auto auto auto auto;
+  }
+
+  .suggest-box {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 2%;
+  }
+}
+
+/*------------End Responsive Screen---------------*/
+
+/*-------------- Create New -----------------*/
+.topic-font {
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+.header-about {
+  font-weight:bold;
+}
+
+.topic-step {
+  font-weight: bold;
+  color: var(--ut-md-grey);
+}
+
+.txtbox {
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  color: var(--ut-grey);
+  height: 2.5em;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.txtarea {
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  color: var(--ut-grey);
+  width: 90%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.btn-plus {
+  background-color: var(--ut-light-grey);
+  border: none;
+  font-weight: bold;
+  height: 2.5em;
+  width: 35px;
+  color: var(--ut-primary);
+  margin-top: 10px;
+}
+
+/*-------------- Sign up-----------------*/
+.signupbox {
+  border: none;
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+
+
+.txt-signup {
+  margin-left: 3%;
+  font-size: 15px;
+}
+
+.about-box {
+  width: 70%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .signupbox  {
+    width: 95%;
+    height: auto;
+  }
+
+  .about-box {
+    width: 95%;
+  }
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 50px;
+  height: 45px;
+  margin: 5px;
+
+}
+
+.dropbtn-color {
+  width: 50px;
+  height: 45px;
+  margin: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: white;
+  border-radius: 0.52em;
+  padding: 0.4rem 0.8rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-colorblock {
+  min-width: 340px;
+}
+
+/*
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}*/
+
+.dropdown-setting {
+  background-color: white;
+  border-radius: 0.52em;
+  padding: 0.4rem 0.7rem;
+  left: 0px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.btn-signup {
+  background-color: var(--ut-primary);
+  color: white;
+  border: none;
+  width: 70%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 15%;
+}
+
+/*****  Tab menu *********/
+
+.tab {
+  overflow: hidden;
+  border:none;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  padding-left: 0%;
+  padding-right: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--ut-bg-grey);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+ text-decoration: underline;
+ font-weight: bold;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: var(--ut-primary);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.hover-line {
+  float: right;
+}
+
+.hover-line:hover {
+  text-decoration: underline;
+  color: var(--ut-primary);
+}
+
+.checkbox-option {
+  padding-bottom: 1rem;
+}
+
+
+/*
+a.footer-link: link, a.footer-link: :hover, a.footer-link: .active, a.footer-link: :visited, {
+  text-decoration: none;
+  color: black;
+}*/
