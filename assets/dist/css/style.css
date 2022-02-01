@@ -175,6 +175,31 @@ background-color: var(--ut-bg-grey);
     border-color: var(--ut-primary);
 }
 
+.btn-outline-primary {
+    color: var(--ut-primary);
+    border-color: var(--ut-primary);
+  }
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--ut-primary);
+    border-color: var(--ut-primary);
+  }
+  .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+  }
+  .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+    color: #fff;
+    background-color: var(--ut-primary);
+    border-color: var(--ut-primary);
+  }
+  .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+  }
+  .btn-outline-primary:disabled, .btn-outline-primary.disabled {
+    color: var(--ut-primary);
+    background-color: transparent;
+  }
+
 .btn-outline-secondary {
     color: var(--ut-secondary);
     background-color: #212529;
@@ -574,7 +599,11 @@ background-color: var(--ut-bg-grey);
 
 .dotted-line.top {
     border-top: 2px dotted var(--ut-md-grey);
-    width: 1.7rem;
+    width: 0rem;
+}
+
+.dotted-line.top.no8 {
+    display: none;
 }
 
 .tab-content > .active {
@@ -582,25 +611,228 @@ background-color: var(--ut-bg-grey);
     text-align: center;
 }
 
-@media (min-width: 992px) {
-    .create-step {
-    flex-direction: row !important;
+.tab-pane {
+    margin-top: 10em;
 }
 
-.tab-content > .active {
-    padding-left: 13em;
-    padding-right: 13em;
-} 
+.create-step {
+    flex-direction: column;
+    background: linear-gradient(0deg, #fafafa00 0%, var(--ut-bg-grey) 35%, var(--ut-bg-grey) 100%);
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
 
-.tab-content-mything > .active {
-    padding-left: 0em;
-    padding-right: 0em;
-} 
+.step-progess {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: small;
+    justify-content: center;
+    margin-top: 1rem;
+}
 
-.tab-content.utertab > .active {
-    padding-left: 0em;
-    padding-right: 0em;
-} 
+li.nav-item {
+    margin-top: 0.25rem;
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+}
+
+#dropimage {
+    display: grid;
+    grid-template-areas: 
+    "dropzone dropzone dropzone dropzone"
+    "imgthumb1 imgthumb2 imgthumb3 imgthumb4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    width: 100%;
+    gap: 1rem;
+}
+
+#dropimage > .dropzone {
+    grid-area: dropzone;
+    width: 100%;
+    height: 28em;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb1 {
+    grid-area: imgthumb1;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb2 {
+    grid-area: imgthumb2;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb3 {
+    grid-area: imgthumb3;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb4 {
+    grid-area: imgthumb4;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pills-review.tab-pane {
+    padding-inline: 0rem;
+}
+
+@media (min-width: 992px) {
+
+    .create-step {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        left: 0;
+        right: 0;
+        background: linear-gradient(0deg, #fafafa00 0%, var(--ut-bg-grey) 35%, var(--ut-bg-grey) 100%);
+    }
+
+    .step-progess {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 3rem !important;
+        margin-top: 0.25rem;
+    }
+
+    .dotted-line.top {
+        border-top: 2px dotted var(--ut-md-grey);
+        width: 1.7rem;
+    }
+
+    .dotted-line.top.no8 {
+        display: inline;
+    }
+
+    li.nav-item {
+        margin-top: 0px;
+    }
+
+    .tab-pane {
+        margin-top: 3em;
+    }
+
+    .tab-content > .active {
+        padding-left: 13em;
+        padding-right: 13em;
+    } 
+
+    .tab-content-mything > .active {
+        padding-left: 0em;
+        padding-right: 0em;
+    } 
+
+    .tab-content.utertab > .active {
+        padding-left: 0em;
+        padding-right: 0em;
+    } 
+
+    #pills-review.tab-pane {
+        padding-inline: 3rem;
+    }
+
+    #dropimage {
+    display: grid;
+    grid-template-areas: 
+    "dropzone dropzone dropzone dropzone"
+    "imgthumb1 imgthumb2 imgthumb3 imgthumb4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    width: 50%;
+    gap: 1rem;
+}
+
+#dropimage > .dropzone {
+    grid-area: dropzone;
+    width: 100%;
+    height: 28em;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb1 {
+    grid-area: imgthumb1;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb2 {
+    grid-area: imgthumb2;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb3 {
+    grid-area: imgthumb3;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropimage > .imgthumb4 {
+    grid-area: imgthumb4;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 }
 
@@ -973,72 +1205,7 @@ textarea {
     border-color: var(--ut-cyan);
 }
 
-#dropimage {
-    display: grid;
-    grid-template-areas: 
-    "dropzone dropzone dropzone dropzone"
-    "imgthumb1 imgthumb2 imgthumb3 imgthumb4";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    width: 50%;
-    gap: 1rem;
-}
 
-#dropimage > .dropzone {
-    grid-area: dropzone;
-    width: 100%;
-    height: 28em;
-    background-color: white;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#dropimage > .imgthumb1 {
-    grid-area: imgthumb1;
-    background-color: white;
-    border-radius: 6px;
-    width: 100%;
-    height: 6.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#dropimage > .imgthumb2 {
-    grid-area: imgthumb2;
-    background-color: white;
-    border-radius: 6px;
-    width: 100%;
-    height: 6.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#dropimage > .imgthumb3 {
-    grid-area: imgthumb3;
-    background-color: white;
-    border-radius: 6px;
-    width: 100%;
-    height: 6.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#dropimage > .imgthumb4 {
-    grid-area: imgthumb4;
-    background-color: white;
-    border-radius: 6px;
-    width: 100%;
-    height: 6.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .txtSteps {
     border: none;
