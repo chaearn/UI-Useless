@@ -75,9 +75,12 @@ background-color: white;
     line-height: 1.2;
 }
 
+main {
+    background-color: var(--ut-bg-grey);
+}
+
 .main {
     min-height: 88vh;
-    background-color: var(--ut-bg-grey);
 }
 
 .container-fluid {
