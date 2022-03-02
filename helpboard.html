@@ -19,7 +19,7 @@
     <!-- Local CSS -->
     <link href="assets/dist/css/style.css" rel="stylesheet">
 
-    <title>Useless Things  |  Log In</title>
+    <title>Help Board - Uselessland</title>
   </head>
   <body>
     <!--SVG-->
@@ -47,23 +47,37 @@
       </symbol>
     </svg>
 
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="mythings" viewBox="0 0 135.866 38.9">
+          <title>My Things</title>
+          <g transform="translate(-50 -164.55)"><g transform="translate(-133.505 127.738)"><text transform="translate(232.371 66.762)" font-size="28" font-family="AmericanaStd, Americana Std"><tspan x="0" y="0">things</tspan></text></g><text transform="translate(50.853 193.333) rotate(7)" font-size="30" font-family="SFProRounded-Bold, SF Pro Rounded" font-weight="700"><tspan x="0" y="0">m</tspan></text><text transform="translate(80.317 195.046) rotate(-5)" font-size="30" font-family="SFProRounded-Bold, SF Pro Rounded" font-weight="700"><tspan x="0" y="0">y</tspan></text></g>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="help" viewBox="0 0 24.081 24.081">
+          <title>Need Help!</title>
+          <g transform="translate(-239.586 -277.586)"><path d="M-1-1H16.028V16.028H-1ZM14.028,1H1V14.028H14.028Z" transform="translate(251.626 279) rotate(45)" fill="currentColor"/><rect width="2" height="6" transform="translate(252.626 290.626) rotate(180)" fill="currentColor"/><rect width="2" height="2" transform="translate(252.626 294.626) rotate(180)" fill="currentColor"/></g>
+    </svg>
 
     <!--Navbar--> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0 px-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand px-5" href="#">
           <svg class="bi me-2" width="147.283" height="19" role="img" aria-label="uselessthings"><use xlink:href="#uselessthings"/></svg>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+        
+
+        <button class="navbar-toggler px-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex flex-fill justify-content-end align-items-center">
-            <a class="nav-link mx-2 active" aria-current="page" href="#">UT Square</a>
-            <a class="nav-link mx-2" href="#">Help Board</a>
+            <a class="nav-link mx-2" href="#">UT Square</a>
+            <a class="nav-link mx-2 active" aria-current="page" href="#">Help Board</a>
             <a class="nav-link mx-2" href="#">My Things</a>
             <!--<a class="nav-link disabled">Disabled</a>-->
-            <button type="button" class="btn btn-primary ms-3">+ Create New</button>
+            <a class="btn btn-primary ms-3" href="file:///Users/chaearn/Documents/GitHub/UT-Square/create.html">+ Create New</a>
           <button type="button" class="btn btn-outline-secondary ms-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21.062" viewBox="0 0 22 21.062" class="pb-1"><g transform="translate(0 0.53)"><rect width="4" height="4" transform="translate(9 14.966)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><path d="M526.375,284.188a6.188,6.188,0,1,0-10.175,4.727,4.7,4.7,0,0,1,1.667,3.591v.189h4.641v-.185a4.914,4.914,0,0,1,1.758-3.674A6.164,6.164,0,0,0,526.375,284.188Z" transform="translate(-509.187 -277.304)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(20 7.966)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(0 7.966)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(17.016 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(3.344)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(3.344 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(17.016)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><path d="M523.094,301A1.547,1.547,0,0,1,520,301Z" transform="translate(-510.547 -282.515)" fill="#fcee21" stroke="#fcee21" stroke-width="1"/></g></svg>
           </button>
@@ -76,66 +90,114 @@
     </nav>
    
     <main>
-      <div class="main container-fluid py-4 px-5">
-	  
-		<div class="row">
-			<div class="col-sm-2">Create Things</div>
-			<div class="col-sm-9">
-				<button type="button" class="btn btn-primary">1</button>
-			</div>
-			<div class="col-sm-1"><button type="button" class="btnsolid btnsolid-savedraft">Save Draft</button></div>
-			
-		</div>
-		
-		<div class="container">
-			<h1>Sign up</h1>
-			<p>Welcome to Useless Things <br>
-			Join Us to Unlock your Cerativity!
-			</p>
-			
-      <form>
-        <div class="row gy-2">
-          <div class="col-6">
-            <input type="text" class="form-control" placeholder="First Name*" name="firstname">
-          </div>
-          <div class="col-6">
-            <input type="text" class="form-control" placeholder="Last Name*" name="lastname">
-          </div>
-          <div class="col-4">
-            <input type="date" id="birthday" name="birthday">
-          </div>
-          <div class="col-6">
-            <input type="text" class="form-control" placeholder="Preferred / Display Name" name="preferredname">
-          </div>
-          <div class="col-2">
-            <select id="cars" class="btn btn-secondary dropdown-toggle">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="vw">VW</option>
-              <option value="audi">Audi</option>
-            </select>
+      <div class="horizontal-scrollable main container-fluid py-4 px-5 d-flex flex-row">
+        <div class="card-col">
+
+          <div class="card is--yellow">
+                      
+            <div class="card-overlay need-help d-flex align-items-stretch sh--yellow" style="display: none;">
+                <div class="card-title-area d-flex flex-columns p-3 flex-grow-1 align-items-center" style="text-align: left;">
+                  <h2 class="card-title flex-grow-1">Navigator</h2>
+                </div>
+                <div class="d-flex flex-column justify-content-end">
+                  <button class="btn btn-thumbnail-top need-help shadow-sm">
+                    <svg style="width: 90%" class="bi" width="24.081" height="24.081" role="img" aria-label="help"><use xlink:href="#help"/></svg>
+                  </button>
+                </div>
+              </div>
+            
+            <img class="card-img-top user-select-none" src="assets/img/thumbnail-sos.jpg">
           </div>
 
-          <div class="col-12">
-            <input type="email" class="form-control" placeholder="Email*" name="email">
+          <div class="card is--pink">
+                      
+            <div class="card-overlay need-help d-flex align-items-stretch sh--pink" style="display: none;">
+                <div class="card-title-area d-flex flex-columns p-3 flex-grow-1 align-items-center" style="text-align: left;">
+                  <h2 class="card-title flex-grow-1">S.O.S</h2>
+                </div>
+                <div class="d-flex flex-column justify-content-end">
+                  <button class="btn btn-thumbnail-top need-help shadow-sm">
+                    <svg style="width: 90%" class="bi" width="24.081" height="24.081" role="img" aria-label="help"><use xlink:href="#help"/></svg>
+                  </button>
+                </div>
+              </div>
+            
+            <img class="card-img-top user-select-none" src="assets/img/thumbnail-sos.jpg">
           </div>
-
-          <div class="col-6">
-            <input type="password" class="form-control" placeholder="Password*" name="pwd">
+          
+          <div class="card is--cyan">
+                      
+            <div class="card-overlay need-help d-flex align-items-stretch sh--cyan" style="display: none;">
+                <div class="card-title-area d-flex flex-columns p-3 flex-grow-1 align-items-center" style="text-align: left;">
+                  <h2 class="card-title flex-grow-1">Smoke Alarm Navigator</h2>
+                </div>
+                <div class="d-flex flex-column justify-content-end">
+                  <button class="btn btn-thumbnail-top need-help shadow-sm">
+                    <svg style="width: 90%" class="bi" width="24.081" height="24.081" role="img" aria-label="help"><use xlink:href="#help"/></svg>
+                  </button>
+                </div>
+              </div>
+            
+            <img class="card-img-top user-select-none" src="assets/img/thumbnail-sos.jpg">
           </div>
-
-          <div class="col-6">
-            <input type="password" class="form-control" placeholder="Confirm Password*" name="confirmpwd">
-          </div>
-
+          
         </div>
-      </form>
 
-		<br><br>
+        <div class="card-col">
 
+          <div class="card is--green">
+                      
+            <div class="card-overlay need-help d-flex align-items-stretch sh--green" style="display: none;">
+                <div class="card-title-area d-flex flex-columns p-3 flex-grow-1 align-items-center" style="text-align: left;">
+                  <h2 class="card-title flex-grow-1">Navigator</h2>
+                </div>
+                <div class="d-flex flex-column justify-content-end">
+                  <button class="btn btn-thumbnail-top need-help shadow-sm">
+                    <svg style="width: 90%" class="bi" width="24.081" height="24.081" role="img" aria-label="help"><use xlink:href="#help"/></svg>
+                  </button>
+                </div>
+              </div>
+            
+            <img class="card-img-top user-select-none" src="assets/img/thumbnail-sos.jpg">
+          </div>
 
-      
+          <div class="card is--red">
+                      
+            <div class="card-overlay need-help d-flex align-items-stretch sh--red" style="display: none;">
+                <div class="card-title-area d-flex flex-columns p-3 flex-grow-1 align-items-center" style="text-align: left;">
+                  <h2 class="card-title flex-grow-1">S.O.S</h2>
+                </div>
+                <div class="d-flex flex-column justify-content-end">
+                  <button class="btn btn-thumbnail-top need-help shadow-sm">
+                    <svg style="width: 90%" class="bi" width="24.081" height="24.081" role="img" aria-label="help"><use xlink:href="#help"/></svg>
+                  </button>
+                </div>
+              </div>
+            
+            <img class="card-img-top user-select-none" src="assets/img/thumbnail-sos.jpg">
+          </div>
+          
+          <div class="card is--teal">
+                      
+            <div class="card-overlay need-help d-flex align-items-stretch sh--teal" style="display: none;">
+                <div class="card-title-area d-flex flex-columns p-3 flex-grow-1 align-items-center" style="text-align: left;">
+                  <h2 class="card-title flex-grow-1">Smoke Alarm Navigator</h2>
+                </div>
+                <div class="d-flex flex-column justify-content-end">
+                  <button class="btn btn-thumbnail-top need-help shadow-sm">
+                    <svg style="width: 90%" class="bi" width="24.081" height="24.081" role="img" aria-label="help"><use xlink:href="#help"/></svg>
+                  </button>
+                </div>
+              </div>
+            
+            <img class="card-img-top user-select-none" src="assets/img/thumbnail-sos.jpg">
+          </div>
+          
+        </div>
+      </div>
     </main>
+
+    
     
     <footer class="footer mt-auto py-2 bg-white">
       <div class="container">

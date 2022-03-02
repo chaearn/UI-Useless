@@ -23,7 +23,7 @@
     <link href="assets/dist/css/style2.css" rel="stylesheet">
     
 
-    <title>Log in - Uselessland</title>
+    <title>Uselessland - Reset password</title>
   </head>
 
         <!--SVG-->
@@ -89,55 +89,38 @@
 
     <main>
       <div class="main container-fluid py-4 px-5">
-        
-        <div style="text-align: center;">
-          <h1>Log in</h1>
-          <p>Welcome back<br>Log in to explore Uselessland!</p>
-        </div><br>
 
-          <div class="container-fluid signupbox">
-            <form>
-              <div class="row gy-2 gx-3">
-      
-                <div class="col-xs-12 col-sm-12">
-                  <input type="email" class="form-control is-valid" placeholder="Email*" name="email">
-                </div>
-      
-                <div class="col-xs-12 col-sm-12">
-                  <input type="password" class="form-control is-invalid" placeholder="Password*" name="pwd">
-                </div>
+        <div class="container-fluid signupbox"> 
+            <!--Enter registered email-->
+            <p style="text-align: left;">Enter your registered email and we'll send you a link to reset your password.</p>
+            <div class="col-xs-12 col-sm-12">
+                <input type="email" class="form-control is-valid" placeholder="Email" name="email">
+            </div>
+            <button type="button" class="btnsolid btn-signup" style="width: 20%;">Send</button>
 
-                <div style="text-align: left; margin-top: 20px;">
-                  <span style="float: left;">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1">Remember me</label>
-                  </span>
-                  <span style="float: right;"><a href="#">Forget password?</a></span>
-                </div>
 
-                <button type="button" class="container btnsolid btn-signup" style="width: 95%;" data-bs-toggle="modal" data-bs-target="#responsetxt">Log in</button>
+            <!--Reset password-->
+            <h5 class="topic-font">Reset password</h5>
+            <div class="col-xs-12 col-sm-12">
+                <input type="password" class="form-control is-valid" placeholder="Password *"  name="pwd" data-bs-toggle="tooltip" 
+                title="Password must contain at least 8 characters with 
+                an uppercase character (A-Z), 
+                lowercase character (a-z), 
+                digit(0-9) and 
+                special character  (~! @#$%^&*_-+=`|\(){}[]:;>,.?/)">
+                <br>
 
-                <!-- Modal login button-->
-                <div class="modal fade" id="responsetxt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <!--<h5 class="modal-title" id="exampleModalLabel">Change password</h5>-->
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        
-                        <p>Incorrect email address</p>
-                        <p>Incorrect password</p>
-                        <p>Incorrect email address and password</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+                <input type="password" class="form-control is-invalid" placeholder="Confirm password *" name="confirmpwd" data-bs-toggle="tooltip" 
+                title="Password must contain at least 8 characters with 
+                an uppercase character (A-Z), 
+                lowercase character (a-z), 
+                digit(0-9) and 
+                special character  (~! @#$%^&*_-+=`|\(){}[]:;>,.?/)">
+            </div>
+            <button type="button" class="btnsolid btn-signup" style="width: 50%;">Change password</button>
+            
+            
+        </div>
         
       </div>
 

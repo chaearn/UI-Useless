@@ -96,84 +96,136 @@
 
           <div class="container-fluid signupbox">
             <form>
-              <div class="row gy-2 gx-3">
-                
-                <div class="col-xs-12 col-sm-8">
-                  <input type="text" class="form-control" placeholder="Name*" name="name">
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <!--<input type="date" class="form-control" id="birthday" name="birthday">-->
-                  <input type="text" class="form-control" placeholder="Date of Birth (dd/mm/yyyy)*" name="birthday"  data-bs-toggle="tooltip" title="dd/mm/yyyy">
-                </div>
 
-                <div class="row gx-2" style="margin-top: 10px;">
-                 <div class="col-10">
-                    <input type="text" class="form-control" style="margin-left: 5px;" placeholder="Preferred / Display Name (English Only)" name="preferredname" data-bs-toggle="tooltip" title="English only">
-                  </div>
-                  <div class="col-2">
-                    <div class="dropdown">
-                      <button class="btnsolid dropbtn" style="padding: 0.5em; margin-right: 0%; background-color: var(--ut-blue);"></button>
-                      <div class="dropdown-content dropdown-content-colorblock">
-                        <div>
-                          <button class="btn dropbtn" style="background-color: var(--ut-yellow)" data-bs-toggle="tooltip" title="Yellow"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-orange)" data-bs-toggle="tooltip" title="Orange"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-red)" data-bs-toggle="tooltip" title="Red"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-pink)" data-bs-toggle="tooltip" title="Pink"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-lavender)" data-bs-toggle="tooltip" title="Lavender"></button>
-                        </div>
-                        <div>
-                          <button class="btn dropbtn" style="background-color: var(--ut-purple)" data-bs-toggle="tooltip" title="Purple"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-blue)" data-bs-toggle="tooltip" title="Blue"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-cyan)" data-bs-toggle="tooltip" title="Cyan"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-green)" data-bs-toggle="tooltip" title="Green"></button>
-                          <button class="btn dropbtn" style="background-color: var(--ut-teal)" data-bs-toggle="tooltip" title="Light Green"></button>
-                        </div>  
+              <div class="d-flex flex-row mb-2">
+                <input type="text" class="form-control mx-2" placeholder="Name*" name="name">
+                <input type="text" class="form-control mx-2" placeholder="Date of Birth (dd/mm/yyyy)*" name="birthday"  data-bs-toggle="tooltip" title="dd/mm/yyyy">
+              </div>
+
+              <div class="d-flex flex-row mb-2">
+                <input type="text" class="form-control is-valid mx-2" style="margin-left: 5px;" placeholder="Preferred / Display Name (English Only)" name="preferredname" data-bs-toggle="tooltip" title="English only">
+                <div class="dropdown radio-toolbar mx-2">
+                  <input type="radio" id="radioBlue" name="radioColour" value="blue">
+                  <button type="button" class="btn choose-color dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="btn dropbtn" style="background-color: var(--bs-blue);" for="radioBlue"></div>
+                </button>
+                  <ul class="choose-color dropdown-menu dropdown-menu-end dropdown-content-colorblock radio-toolbar">
+                    <div class="d-flex flex-row justify-content-evenly">
+                      <input type="radio" id="radioYellow" name="radioColour" value="yellow" checked>
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-yellow);" for="radioYellow"></label>
+
+                      <input type="radio" id="radioOrange" name="radioColour" value="orange">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-orange);" for="radioOrange"></label>
+
+                      <input type="radio" id="radioRed" name="radioColour" value="red">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-red);" for="radioRed"></label>
+
+                      <input type="radio" id="radioPink" name="radioColour" value="pink">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-pink);" for="radioPink"></label>                       
+                      
+                      <input type="radio" id="radioPurple" name="radioColour" value="purple">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-purple);" for="radioPurple"></label>
+
+                    </div>
+                    <div class="d-flex flex-row justify-content-evenly">
+                      <input type="radio" id="radioIndigo" name="radioColour" value="indigo">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-indigo);" for="radioIndigo"></label>
+
+                      <input type="radio" id="radioBlue" name="radioColour" value="blue">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-blue);" for="radioBlue"></label>
+                      
+                      <input type="radio" id="radioCyan" name="radioColour" value="cyan">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-cyan);" for="radioCyan"></label>                                                 
+                      
+                      <input type="radio" id="radioGreen" name="radioColour" value="Green">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-green);" for="radioGreen"></label>
+                                                                        
+                      <input type="radio" id="radioTeal" name="radioColour" value="teal">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-teal);" for="radioTeal"></label>                         
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row mb-2">
+                <input type="email" class="form-control is-valid mx-2" placeholder="Email*" name="email">
+              </div>
+
+              <div class="d-flex flex-row mb-2">
+                <input type="password" class="form-control is-valid mx-2" placeholder="Password*" name="pwd" data-bs-toggle="tooltip" 
+                  title="Password must contain at least 8 characters with 
+                  an uppercase character (A-Z), 
+                  lowercase character (a-z), 
+                  digit(0-9) and 
+                  special character  (~! @#$%^&*_-+=`|\(){}[]:;>,.?/)">
+              </div>
+              
+              <div class="d-flex flex-row mb-2">
+                <input type="password" class="form-control is-invalid mx-2" placeholder="Confirm Password*" name="confirmpwd"  data-bs-toggle="tooltip" 
+                  title="Password must contain at least 8 characters with 
+                  an uppercase character (A-Z), 
+                  lowercase character (a-z), 
+                  digit(0-9) and 
+                  special character  (~! @#$%^&*_-+=`|\(){}[]:;>,.?/)">
+              </div>
+
+              <div style="text-align: left; margin-top: 20px; margin-bottom: 20px;">
+                <table>
+                  <tbody class="d-flex" style="flex-direction: column;">
+                  <tr class="d-flex flex-row">
+                    <td style="padding-bottom: 40px;"><input type="checkbox" id="ck2" name="ck2"></td>
+                    <td style="padding-bottom: 20px;"><label class="txt-signup" for="ck2">
+                      <!--อายุ 13-15 ปี: ข้าพเจ้าได้รับอนุญาตจากผู้ปกครองให้สมัครและใช้งานเว็บไซต์ได้<br>-->
+                      13-15 years old: I confirm that my guardian consents to my registration and use of this website.  
+                    </label>
+                    </td>
+                  </tr>
+
+                  <tr class="d-flex flex-col">
+                    <td><input type="checkbox" id="ck3" name="ck3"></td>
+                    <td><label class="txt-signup" for="ck3">
+                      <!--ข้าพเจ้ายอมรับข้อกำหนดและเงื่อนไข <a href="#">ข้อกำหนดและเงื่อนไข</a><br>-->
+                      I am at least 13 years old and I agree to <a href="term.html" target="_blank">Terms & Conditions</a> 
+                    </label>
+                    </td>
+                  </tr>
+                  </tbody>  
+                </table>
+              </div>
+
+                <button type="button" class="container btnsolid btn-signup" data-bs-toggle="modal" data-bs-target="#responsetxt">Sign up</button>
+      
+                <!-- Modal Signup button-->
+                <div class="modal fade" id="responsetxt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header" style="border-top-left-radius: 2rem; border-top-right-radius: 2rem;">
+                        <!--<h5 class="modal-title" id="exampleModalLabel">Change password</h5>-->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="border-radius: 2rem;">
+                        
+                        <p>This email address is already being used on UT Square</p>
+
+                        <!--≈
+                        <p>Passwords do not match</p>
+                        <p>Password does not meet the requirements</p>
+                        <p>Password must contain at least
+                          8 characters
+                          1 uppercase character (A-Z)
+                          1 lowercase character (a-z)
+                          1 digit (0-9)
+                          1 special character (~! @#$%^&*_-+=`|\(){}[]:;"',.?/)</p>
+                        <p>This preferred name is not available.</p>
+                        <p>Information is incomplete</p>
+
+                        <p>Uselessland doesn't allow children under the age of 13 to join</p>
+                        -->
+
                       </div>
                     </div>
                   </div>
                 </div>
-                
-      
-                <div class="col-xs-12 col-sm-12">
-                  <input type="email" class="form-control" placeholder="Email*" name="email">
-                </div>
-      
-                <div class="col-xs-12 col-sm-6">
-                  <input type="password" class="form-control" placeholder="Password*" name="pwd" data-bs-toggle="tooltip" 
-                  title="Password must contain at least 8 characters with an uppercase character (A-Z), lowercase character (a-z), 
-                  digit(0-9) and special character  (~! @#$%^&*_-+=`|\(){}[]:;>,.?/)">
-                </div>
-      
-                <div class="col-xs-12 col-sm-6">
-                  <input type="password" class="form-control" placeholder="Confirm Password*" name="confirmpwd"  data-bs-toggle="tooltip" 
-                  title="Password must contain at least 8 characters with an uppercase character (A-Z), lowercase character (a-z), 
-                  digit(0-9) and special character  (~! @#$%^&*_-+=`|\(){}[]:;>,.?/)">
-                </div>
-
-                <div style="text-align: left; margin-top: 20px; margin-bottom: 20px;">
-                  <table>
-                    <tr>
-                      <td style="padding-bottom: 40px;"><input type="checkbox" id="ck2" name="ck2"></td>
-                      <td style="padding-bottom: 20px;"><label class="txt-signup" for="ck2">
-                        <!--อายุ 13-15 ปี: ข้าพเจ้าได้รับอนุญาตจากผู้ปกครองให้สมัครและใช้งานเว็บไซต์ได้<br>-->
-                        13-15 years old: I confirm that my guardian consents to my registration and use of this website.  
-                      </label>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td><input type="checkbox" id="ck3" name="ck3"></td>
-                      <td><label class="txt-signup" for="ck3">
-                        <!--ข้าพเจ้ายอมรับข้อกำหนดและเงื่อนไข <a href="#">ข้อกำหนดและเงื่อนไข</a><br>-->
-                        I agree to <a href="#">Terms & Conditions</a> 
-                      </label>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-
-                <button type="button" class="container btnsolid btn-signup">Sign up</button>
-      
               </div>
             </form>
           </div>

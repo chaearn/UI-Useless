@@ -22,7 +22,8 @@
     <link href="assets/dist/css/style2.css" rel="stylesheet">
     
 
-    <title>My Thing: Need-Help - Uselessland</title>
+    <title>Need-Help Thing - Uselessland</title>
+    
   </head>
 
         <!--SVG-->
@@ -62,6 +63,20 @@
           </symbol>
         </svg>
     
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol id="help" viewBox="0 0 24.081 24.081">
+              <title>Need Help!</title>
+              <g transform="translate(-239.586 -277.586)"><path d="M-1-1H16.028V16.028H-1ZM14.028,1H1V14.028H14.028Z" transform="translate(251.626 279) rotate(45)" fill="currentColor"/><rect width="2" height="6" transform="translate(252.626 290.626) rotate(180)" fill="currentColor"/><rect width="2" height="2" transform="translate(252.626 294.626) rotate(180)" fill="currentColor"/></g>
+          </symbol>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="25.299" height="25.299" style="display: none;">
+          <symbol id="send"  viewBox="0 0 25.299 25.299">
+            <path id="Path_34" data-name="Path 34" d="M8163,1758.987l8.229-16.956,8.593,16.956-8.593-4.1Z" transform="translate(-4527.613 -7003.208) rotate(45)" fill="blue" stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </symbol>
+        </svg>
+        
+        
         <!--Navbar--> 
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0">
           <div class="container-fluid">
@@ -101,30 +116,42 @@
    
 
     <main>
-      <div class="main container-fluid py-4 px-5">
-        <!------------------ Edit Button -------------->
-        <div style="float: right;">
-          <button class="btn btn-keep btn-edit" type="button"><i class="material-icons">create</i> Edit Thing</button>
-        </div>
-      <!---------------- END Edit BUTTONS ------------>
-        <h3>Help Them Build</h3>
+      <!------------------ KEEP & CLAP BUTTONS -------------->
+      <div style="right: 0%; margin-top: 2%; position: fixed;">
+        <button class="btn button-edit" type="button">
+          <i class="material-icons" style="font-size:2.5vh;">create</i>
+        </button>
+      </div>
+       <!---------------- END KEEP & CLAP BUTTONS ------------>
+
+      <div class="main container-fluid py-5 px-5">
 
         <div class="help-wrapper">
            <!---------------------------------------------ITEM NAME / TIME / CREATOR------------------------------------------->
            <div class="item-name">
             <!--***** Item Name & Time *****-->            
-            <h3 class="topic-font">Beautiful Sunday</h3>
-            <div>
+            <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+              <h3 class="mb-0">                          
+                  <svg style="color: var(--ut-helpme); transform: scale(1.5)" class="bi withicon me-2 mb-1" width="14" height="17.071" role="img" aria-label="help"><use xlink:href="#help"/></svg>
+                  Beautiful Sunday
+              </h3>
+              <div class="d-none save-btn d-flex justify-content-center">
+                  <button class="btn btn-outline-primary markSolved">
+                    <span class="mx-2">Mark as Solved!</span>
+                  </button>
+              </div>  
+            </div>
+            <div class="item-time">
               <svg class="bi me-2" width="16" height="16" role="img" aria-label="clock-icon"><use xlink:href="#clock-icon"/></svg>
-              Making time: 12 hrs 50 mins
+              <span style="color: var(--ut-md-grey);">Make Time:</span><span class="time-num ms-2 me-1">12</span>hrs<span class="time-num ms-2 me-1">50</span>mins
             </div>
 
             <!--******* Co-creator *******-->
             <div>
-              <div class="topic-font">My Creator</div>
-                <button type="button" class="btnsolid btncreator" id="is--purple" onclick="window.open('#', '_blank')">C</button>
-                <button type="button" class="btnsolid btncreator" id="is--pink" onclick="window.open('main.html', '_blank')">E</button>
-                <button type="button" class="btnsolid btncreator" id="is--green" onclick="window.open('https://www.google.com', '_blank')">P</button>
+              <p class="topic-font mb-2 pt-3">My Creator</p>
+                <button type="button" class="btnsolid btncreator is--purple" onclick="window.open('#', '_blank')">C</button>
+                <button type="button" class="btnsolid btncreator is--pink" onclick="window.open('#', '_blank')">E</button>
+                <button type="button" class="btnsolid btncreator is--green" onclick="window.open('#', '_blank')">P</button>
             </div>
           </div>
           <!------------------------------------------END ITEM NAME  / TIME / CREATOR------------------------------------------>
@@ -149,23 +176,22 @@
                   <img class="resize"src="assets/img/Soft Pencil resize2.jpg" style="width:100%">
                 </div>
               </div>
-
-              <br>
             
-              <div class="row  d-flex justify-content-between">
-                <div class="column-gallery">
-                  <img class="demo cursor thumbnail-img" src="assets/img/Soft High Heel1.jpeg" onclick="currentSlide(1)" >
+              <div class="d-flex flex-row justify-content-between mt-3">
+                <div class="me-3 column-gallery-thumb d-flex justify-content-center align-items-center">
+                  <img class="column-gallery-thumb demo cursor thumbnail-img" src="assets/img/Soft High Heel1.jpeg" onclick="currentSlide(1)" >
                 </div>
-                <div class="column-gallery">
-                  <img class="demo cursor thumbnail-img" src="assets/img/Mobile stand-back.jpeg" onclick="currentSlide(2)">
+                <div class="me-3 column-gallery-thumb d-flex justify-content-center align-items-center">
+                  <img class="column-gallery-thumb demo cursor thumbnail-img" src="assets/img/Mobile stand-back.jpeg" onclick="currentSlide(2)">
                 </div>
-                <div class="column-gallery">
-                  <img class="demo cursor  thumbnail-img" src="assets/img/Mobile stand-front.jpeg" onclick="currentSlide(3)">
+                <div class="me-3 column-gallery-thumb">
+                  <img class="column-gallery-thumb demo cursor  thumbnail-img" src="assets/img/Mobile stand-front.jpeg" onclick="currentSlide(3)">
                 </div>
-                <div class="column-gallery">
-                  <img class="demo cursor thumbnail-img" src="assets/img/Soft Pencil resize2.jpg" onclick="currentSlide(4)">
+                <div class="column-gallery-thumb">
+                  <img class="column-gallery-thumb demo cursor thumbnail-img" src="assets/img/Soft Pencil resize2.jpg" onclick="currentSlide(4)">
                 </div>
               </div>
+
             </div>
 
             <script>
@@ -202,194 +228,144 @@
           <!------------------------------------------------END ITEM IMAGE----------------------------------------------------->
 
           <!--------------------------------My Problem--------------------------------------------->
-          <div class="item-problem">
-            <h6 class="topic-font">My Problem</h6>
-            <p class="rounded-3">
-              Sunday morning, up with the dark
-              I think I'll take a walk in the park
-              Hey hey hey, it's a beautiful day
-              I've got someone waiting for me
-              And when I see her I know that she'll say
-              Hey hey hey, what a beautiful day
-              Hi hi hi, beautiful Sunday
-              This is my my my beautiful day
-              When you said said said said that you loved me
-              Oh my my my its a beautiful day
-            </p>
-
-            <p class="topic-font">Required Skill</p>
+          <div class="item-problem ">
+            <p class="topic-font mb-2 pt-3">My Problem</p>
             <div>
-              <span class="rounded-pill btn-fr-skill">Coding</span>
-              <span class="rounded-pill btn-fr-skill">Graphic</span>
-              <span class="rounded-pill btn-fr-skill">Wireframe</span>
+              <div class="input-group mb-4">
+                <span class="input-group-text problem">*</span>
+                <textarea type="text" readonly class="form-control problem" placeholder="Tell us how you did it." id="exampleFormControlTextarea1" rows="5">Sunday morning, up with the lark, I think I'll take a walk in the park. Hey hey hey, it's a beautiful day. I've got someone waiting for me. And when I see her I know that she'll says</textarea>
+              </div>
+              </div>
+            <p class="topic-font mb-3 pt-3">Required Skill</p>
+            <div>
+              <button class="rounded-pill btn-fr-skill">Coding</button>
+              <button class="rounded-pill btn-fr-skill">Graphic</button>
+              <button class="rounded-pill btn-fr-skill">Wireframe</button>
             </div>
           </div>
           <!--------------------------------End My Problem--------------------------------------------->
           
           <!--------------------------------Suggestion--------------------------------------------->
             <div class="item-suggest">
-              <h6 class="topic-font">Suggestion</h6>
+              <p class="topic-font pb-2 pt-3">Suggestion</p>
 
-              <div class="rounded-3 chitchat-box-sub">
+              <div class="chitchat-box-sub">
                 <div class="row">
-                  <textarea class="rounded-3 leave-comment" name="message"></textarea>
+                  <textarea class="leave-comment" name="message" placeholder="Leave a note."></textarea>
                 </div>
                 <div class="row boxline">
-                  <div>
-                    <button class="btn-right btn-send">Send <i class="material-icons btn-rotate">send</i></button>
+                  
+                  <div class="d-flex justify-content-between" style="padding-inline: 0px;">
+                      <button type="button" class="btnsolid btncreator is--green chitchat" onclick="window.open('#', '_blank')">C</button>
+                    
+                    <button class="btn-right btn-send">Send<svg class="bi ms-1" style="transform: scale(0.8); margin-bottom: 6px;" width="25.299" height="25.299" role="img" aria-label="send"><use xlink:href="#send"/></svg>
+                    </button>
                   </div>
                 </div>
               </div><br>
 
               <div class="suggest-box">
-                <div class="rounded-3 chitchat-box-sub">
+
+                <div class="chitchat-box-sub mb-4">
                   <div class="row">
-                    <p>
-                      Thanks for sharing. I made this camera hat preference by your blog and it's success!!! thank you. 
-                      I changes the electrode design for the switch that can make servos turn back by itself :)
-                    </p>
+                    <div class="leave-comment" name="message" placeholder="Leave a note.">Thanks for sharing. I made this camera hat preference by your blog and it's success!!! thank you. I changes the electrode design for the switch that can make servos turn back by itself :)</div>
                   </div>
-                  <div class="row boxline">
-                    <div class="col-1">
-                      <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-purple);" onclick="window.open('#', '_blank')">C</button>
+                  <div class="d-flex flex-row align-items-center boxline">
+                    <div class="me-2">
+                      <button type="button" class="btnsolid btncreator is--purple chitchat" onclick="window.open('#', '_blank')">C</button>
                     </div>
-                    <div class="col-11">
-                      <p class="container">8 days ago</p> <!-----select from table-->
+                    <div class="comment-time">
+                      8 days ago <!-----select from table-->
                     </div>
                   </div>
                 </div>
 
-                <div class="rounded-3 chitchat-box-sub">
+                <div class="chitchat-box-sub mb-4">
                   <div class="row">
-                    <p>
-                      What about a pedestal for proper alignment? It should help a lot!
-                    </p>
+                    <div class="leave-comment" name="message" placeholder="Leave a note.">What about a pedestal for proper alignment? It should help a lot!</div>
                   </div>
-                  <div class="row boxline">
-                    <div class="col-1">
-                      <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-green);" onclick="window.open('#', '_blank')">A</button>
+                  <div class="d-flex flex-row align-items-center boxline">
+                    <div class="me-2">
+                      <button type="button" class="btnsolid btncreator is--pink chitchat" onclick="window.open('#', '_blank')">C</button>
                     </div>
-                    <div class="col-11">
-                      <p class="container">8 days ago</p> <!-----select from table-->
+                    <div class="comment-time">
+                      8 days ago <!-----select from table-->
                     </div>
                   </div>
                 </div>
 
-                <div class="rounded-3 chitchat-box-sub">
+                <div class="chitchat-box-sub mb-4">
                   <div class="row">
-                    <p>
-                      Sunday morning, up with the lark I think I'll take a walk in the park 
-                      Hey hey hey, it's a beautiful day I've got someone waiting for me 
-                      And when I see her I know that she'll say
-                    </p>
+                    <div class="leave-comment" name="message" placeholder="Leave a note.">Sunday morning, up with the lark I think I'll take a walk in the park. Hey hey hey, it's a beautiful day I've got someone waiting for me and when I see her I know that she'll say</div>
                   </div>
-                  <div class="row boxline">
-                    <div class="col-1">
-                      <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-orange);" onclick="window.open('#', '_blank')">J</button>
+                  <div class="d-flex flex-row align-items-center boxline">
+                    <div class="me-2">
+                      <button type="button" class="btnsolid btncreator is--green chitchat" onclick="window.open('#', '_blank')">C</button>
                     </div>
-                    <div class="col-11">
-                      <p class="container">8 days ago</p> <!-----select from table-->
+                    <div class="comment-time">
+                      8 days ago <!-----select from table-->
                     </div>
                   </div>
                 </div>
 
-                <div class="rounded-3 chitchat-box-sub">
-                  <div class="row">
-                    <p>
-                      Sunday morning, up with the lark I think I'll take a walk in the park 
-                      Hey hey hey, it's a beautiful day I've got someone waiting for me 
-                      And when I see her I know that she'll say
-                    </p>
-                  </div>
-                  <div class="row boxline">
-                    <div class="col-1">
-                      <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-orange);" onclick="window.open('#', '_blank')">J</button>
-                    </div>
-                    <div class="col-11">
-                      <p class="container">8 days ago</p> <!-----select from table-->
-                    </div>
-                  </div>
-                </div>
               </div>
 
             </div>
           <!--------------------------------End Suggestion--------------------------------------------->
 
           <!--------------------------------My Story--------------------------------------------->
-          <div class="item-story">
-            <h6 class="topic-font">My Story</h6>
-              <p>
-                  Sunday morning, up with the dark
-                  I think I'll take a walk in the park
-                  Hey hey hey, it's a beautiful day
-                  I've got someone waiting for me
-                  And when I see her I know that she'll say
-                  Hey hey hey, what a beautiful day
-                  Hi hi hi, beautiful Sunday
-                  This is my my my beautiful day
-                  When you said said said said that you loved me
-                  Oh my my my its a beautiful day
-              </p>
+          <div class="item-story more">
+            <p class="topic-font mb-2 pt-3">My Story</p>
+              <div class="form-control" style="padding: 1rem;">
+                  Sunday morning, up with the dark. I think I'll take a walk in the park. Hey hey hey, it's a beautiful day. I've got someone waiting for me. And when I see her I know that she'll say. Hey hey hey, what a beautiful day. Hi hi hi, beautiful Sunday. This is my my my beautiful day. When you said said said said that you loved me. Oh my my my its a beautiful day
+              </div>
           </div>
 
           <!-----------------------------------Tools & Steps------------------------------------------>
           <div class="item-steps">
-            <p class="topic-font">Tools and Materials</p>
+            <p class="topic-font pb-2 pt-3">Tools and Materials</p>
             <div>
-              <span class="rounded-pill txtTools frame-yellow">Scissors</span>
-              <span class="rounded-pill txtTools">Glue</span>
-              <span class="rounded-pill txtTools">Papers</span>
+              <button class="rounded-pill btn-fr-tools">Coding</button>
+              <button class="rounded-pill btn-fr-tools">Graphic</button>
+              <button class="rounded-pill btn-fr-tools">Wireframe</button>
             </div>
 
             <br>
             <!--************STEPS*******************-->
-            <h6 class="topic-font">Make Me in <span class="rounded-circle txtSteps">2</span> Steps</h6>
-            <div>
-              <table id="table1">
-                <col span="1" style="background-color: var(--ut-primary)"></colgroup>
-                <tr>
-                  <td class="rounded-start table-td-sm">1</td>
-                  <td class="rounded-end table-td-lg">
-                    Sunday morning, up with the lark
-                    I think I'll take a walk in the park
-                    Hey hey hey, it's a beautiful day
-                    I've got someone waiting for me
-                    And when I see her I know that she'll say
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td class="rounded-start table-td-sm">2</td>
-                  <td class="rounded-end table-td-lg">
-                    Hey hey hey, what a beautiful day
-                    Hi hi hi, beautiful Sunday
-                    This is my my my beautiful day
-                    When you said said said said that you loved me
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="rounded-start table-td-sm">3</td>
-                  <td class="rounded-end table-td-lg">
-                    Oh my my my its a beautiful day
-                    Birds are singing, you by my side
-                    Lets take a car and go for a ride
-                    Hey hey hey, it's a beautiful day
-                    We'll drive on and follow the sun
-                    Making Sunday go on and on
-                    Hey hey hey it's a beautiful day
-                  </td>
-                </tr>
-                
-              </table> 
-            </div>
+            <p class="topic-font pb-2 pt-3">Make Me in <span class="rounded-circle txtSteps">2</span> Steps</p>
+                <div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text step" id="step">1</span>
+                    <div type="text" class="form-control">Sunday morning, up with the lark, I think I'll take a walk in the park. Hey hey hey, it's a beautiful day. I've got someone waiting for me. And when I see her I know that she'll says</div>    
+                    <span class="input-group-text addremove" id="addremove">
+                      <svg class="bi" width="13.698" height="13.698" role="img" aria-label="closeicon"><use xlink:href="#closeicon"/></svg>
+                      <svg class="bi" width="16.372" height="16.372" role="img" aria-label="addicon"><use xlink:href="#addicon"/></svg>
+                    </span>      
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text step" id="step">2</span>
+                    <div type="text" class="form-control">Sunday morning, up with the lark, I think I'll take a walk in the park. Hey hey hey, it's a beautiful day. I've got someone waiting for me. And when I see her I know that she'll says</div>    
+                    <span class="input-group-text addremove" id="addremove">
+                      <svg class="bi" width="13.698" height="13.698" role="img" aria-label="closeicon"><use xlink:href="#closeicon"/></svg>
+                      <svg class="bi" width="16.372" height="16.372" role="img" aria-label="addicon"><use xlink:href="#addicon"/></svg>
+                    </span>      
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text step" id="step">3</span>
+                    <div type="text" class="form-control">Sunday morning, up with the lark, I think I'll take a walk in the park. Hey hey hey, it's a beautiful day. I've got someone waiting for me. And when I see her I know that she'll says</div>    
+                    <span class="input-group-text addremove" id="addremove">
+                      <svg class="bi" width="13.698" height="13.698" role="img" aria-label="closeicon"><use xlink:href="#closeicon"/></svg>
+                      <svg class="bi" width="16.372" height="16.372" role="img" aria-label="addicon"><use xlink:href="#addicon"/></svg>
+                    </span>      
+                  </div>
+                </div>
           </div>
 
            <!-------------------------------------------CREATIVE TECHNIQUES | SKILLS --------------------------------------->
            <div class="item-technique">
             <!--******* Creative Techniques *******-->
             <div>         
-              <h6 class="topic-font">Creative Techniques</h6>
+              <p class="topic-font pt-3">Creative Techniques</p>
               <p class="rounded-3 btn-creative-tech" style="border-color: var(--ut-lavender); color: var(--ut-lavender);">Brainstorming</p>
               <p class="rounded-3 btn-creative-tech" style="border-color: var(--ut-purple); color: var(--ut-purple);">Mood Boards</p>
               <p class="rounded-3 btn-creative-tech" style="border-color: var(--ut-blue); color: var(--ut-blue);">Mind mapping</p>
@@ -398,14 +374,10 @@
             
             <!--******* SKILLS *******-->
             <div>
-              <h6 class="topic-font">Making Techniques</h6>
-              <p>
-                Sunday morning, up with the dark
-                I think I'll take a walk in the park
-                Hey hey hey, it's a beautiful day
-                I've got someone waiting for me
-                And when I see her 
-              </p>
+              <p class="topic-font pt-3">Making Techniques</p>
+              <div class="form-control" style="padding: 1rem;">
+                Sunday morning, up with the dark. I think I'll take a walk in the park. Hey hey hey, it's a beautiful day. I've got someone waiting for me. And when I see her 
+            </div>
             </div>
           
             <!------------------------------------------END CREATIVE TECHNIQUES & SKILLS----------------------------------------->

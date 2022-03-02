@@ -106,13 +106,15 @@
    
 
     <main>
-      <div class="main container-fluid py-4 px-5">
+      <!------------------ Edit Button -------------->
+      <div style="right: 0%; margin-top: 2%; position: fixed;">
+        <button class="btn button-edit" type="button">
+          <i class="material-icons" style="font-size:2.5vh;">create</i>
+        </button>
+      </div>
+      <!---------------- END Edit BUTTONS ------------>
 
-          <!------------------ Edit Button -------------->
-          <div style="float: right;">
-              <button class="btn btn-keep btn-edit" type="button"><i class="material-icons">create</i> Edit Thing</button>
-          </div>
-          <!---------------- END Edit BUTTONS ------------>
+      <div class="main container-fluid py-4 px-5">
 
           <div class="item-wrapper">
 
@@ -128,9 +130,9 @@
               <!--******* Co-creator *******-->
               <div>
                 <h6 class="topic-font">My Creator</h6>
-                  <button type="button" class="btnsolid btncreator" id="is--purple" onclick="window.open('#', '_blank')">C</button>
-                  <button type="button" class="btnsolid btncreator" id="is--pink" onclick="window.open('main.html', '_blank')">E</button>
-                  <button type="button" class="btnsolid btncreator" id="is--green" onclick="window.open('https://www.google.com', '_blank')">P</button>
+                  <button type="button" class="btnsolid btncreator is--purple" onclick="window.open('#', '_blank')">C</button>
+                  <button type="button" class="btnsolid btncreator is--pink" onclick="window.open('main.html', '_blank')">E</button>
+                  <button type="button" class="btnsolid btncreator is--green" onclick="window.open('https://www.google.com', '_blank')">P</button>
               </div>
             </div>
             <!------------------------------------------END ITEM NAME  / TIME / CREATOR------------------------------------------>
@@ -328,15 +330,16 @@
                   And when I see her 
                 </p>
               </div>
+            </div>
             
               <!--*************END CREATIVE TECHNIQUES & SKILLS*****--->
 
 
               <!--**************CHIT CHAT***************-->
-            
+            <div class="item-chat">
               <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'chitchat')" id="defaultOpen"><h6><b>Chit Chat</b></h6></button>
-                <button class="tablinks" onclick="openCity(event, 'suggestion')" ><h6><b>Suggestion</b></h6></button>
+                <button class="tablinks" onclick="openCity(event, 'chitchat')" id="defaultOpen"><h6 class="topic-font">Chit Chat</h6></button>
+                <button class="tablinks" onclick="openCity(event, 'suggestion')" ><h6 class="topic-font">Suggestion</h6></button>
 
               </div>
 
@@ -351,7 +354,7 @@
                     </div>
                     <div class="row boxline">
                       <div class="col-1">
-                        <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-purple);" onclick="window.open('#', '_blank')">C</button>
+                        <button type="button" class="btnsolid btncreator-sm is--purple" onclick="window.open('#', '_blank')">C</button>
                       </div>
                       <div class="col-11">
                         <p class="container">8 days ago</p> <!-----select from table-->
@@ -367,7 +370,7 @@
                     </div>
                     <div class="row boxline">
                       <div class="col-1">
-                        <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-green);" onclick="window.open('#', '_blank')">A</button>
+                        <button type="button" class="btnsolid btncreator-sm is--green" onclick="window.open('#', '_blank')">A</button>
                       </div>
                       <div class="col-11">
                         <p class="container">8 days ago</p> <!-----select from table-->
@@ -385,7 +388,7 @@
                     </div>
                     <div class="row boxline">
                       <div class="col-1">
-                        <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-orange);" onclick="window.open('#', '_blank')">J</button>
+                        <button type="button" class="btnsolid btncreator-sm is--orange" onclick="window.open('#', '_blank')">J</button>
                       </div>
                       <div class="col-11">
                         <p class="container">8 days ago</p> <!-----select from table-->
@@ -399,6 +402,15 @@
                   <div class="suggest-box" style="height: auto;">
                     <div class="rounded-3 chitchat-box-sub">
                       <div class="row">
+                        <h6 class="topic-font">Problem:</h6>
+                        <p>
+                          Where can I find this material?
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="rounded-3 chitchat-box-sub">
+                      <div class="row">
                         <p>
                           Love of my life, you've hurt me. You've broken my heart, and now you leave me. 
                           Love of my life, can't you see? Bring it back, bring it back. Don't take it away from me
@@ -406,7 +418,7 @@
                       </div>
                       <div class="row boxline">
                         <div class="col-1">
-                          <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-pink);" onclick="window.open('#', '_blank')">C</button>
+                          <button type="button" class="btnsolid btncreator-sm is--pink" onclick="window.open('#', '_blank')">C</button>
                         </div>
                         <div class="col-11">
                           <p class="container">8 days ago</p> <!-----select from table-->
@@ -422,7 +434,7 @@
                       </div>
                       <div class="row boxline">
                         <div class="col-1">
-                          <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-red);" onclick="window.open('#', '_blank')">A</button>
+                          <button type="button" class="btnsolid btncreator-sm is--red" onclick="window.open('#', '_blank')">A</button>
                         </div>
                         <div class="col-11">
                           <p class="container">8 days ago</p> <!-----select from table-->
@@ -439,7 +451,7 @@
                       </div>
                       <div class="row boxline">
                         <div class="col-1">
-                          <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-lavender);" onclick="window.open('#', '_blank')">J</button>
+                          <button type="button" class="btnsolid btncreator-sm is--lavender" onclick="window.open('#', '_blank')">J</button>
                         </div>
                         <div class="col-11">
                           <p class="container">8 days ago</p> <!-----select from table-->
@@ -457,7 +469,7 @@
                       </div>
                       <div class="row boxline">
                         <div class="col-1">
-                          <button type="button" class="btnsolid btncreator-sm" style="background-color:var(--ut-orange);" onclick="window.open('#', '_blank')">J</button>
+                          <button type="button" class="btnsolid btncreator-sm is--orange" onclick="window.open('#', '_blank')">J</button>
                         </div>
                         <div class="col-11">
                           <p class="container">8 days ago</p> <!-----select from table-->
@@ -466,9 +478,9 @@
                     </div>
                   </div>
                 </div>
-                
-              
             </div>
+              
+            
           </div>
           <!-------------------------------------END CREATIVE TECHNIQUES | SKILLS | CHAT---------------------------------------------->
         

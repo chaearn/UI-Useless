@@ -103,14 +103,14 @@
           <table>
             <tr>
               <td>Name:</td>
-              <td><input class="form-control" type="text" id="name" required disabled="true" value="นัฐพร ศรีสุข"></td>
+              <td><input style="margin-left: 10px;" class="form-control" type="text" id="name" required disabled="true" value="นัฐพร ศรีสุข"></td>
               <td><button class="btn hover-line" type="button" onclick="myFunction1()"><i class="material-icons">create</i>Edit</button></td>
               <td><button class="btn hover-line" type="button" id="savename" onclick="saveButton()" disabled>Save change</button></td>
             </tr>
 
             <tr>
               <td>Preferred name:</td>
-              <td><input class="form-control" type="text" id="prename" required disabled="true" value="Hello World"></td>
+              <td ><input style="margin-left: 10px;"  class="form-control" type="text" id="prename" required disabled="true" value="Hello World"></td>
               <td><button class="btn hover-line" type="button" onclick="myFunction2()"><i class="material-icons">create</i>Edit</button></td>
               <td><button class="btn hover-line" type="button" id="saveprename" onclick="saveButton()" disabled>Save change</button></td>
             </tr>
@@ -118,39 +118,101 @@
             <tr>
               <td>Profile colour:</td>
               <td>
-                <div class="dropdown">
-                  <button type="button" data-bs-toggle="dropdown" class="btnsolid dropbtn" id="colour" onclick="myFunction3()" 
-                  style="padding: 0.5em; margin-right: 0%; background-color: var(--ut-blue);" disabled></button>
-                  <div class="dropdown-menu dropdown-content-colorblock dropdown-setting">
+                <div class="dropdown radio-toolbar mx-2">
+                  <input type="radio" id="blue" name="radioColour" value="blue">
+                  <button type="button" class="btn choose-color dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="btn dropbtn" style="background-color: var(--bs-blue);" for="blue"></div>
+                </button>
+                  <ul class="choose-color dropdown-menu dropdown-menu-end dropdown-content-colorblock radio-toolbar">
+                    <div class="d-flex flex-row justify-content-evenly">
+                      <input type="radio" id="yellow" name="radioColour" value="yellow" checked>
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-yellow);" for="yellow"></label>
+
+                      <input type="radio" id="orange" name="radioColour" value="orange">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-orange);" for="orange"></label>
+
+                      <input type="radio" id="red" name="radioColour" value="red">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-red);" for="red"></label>
+
+                      <input type="radio" id="pink" name="radioColour" value="pink">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-pink);" for="pink"></label>                       
+                      
+                      <input type="radio" id="purple" name="radioColour" value="purple">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-purple);" for="purple"></label>
+
+                    </div>
+                    <div class="d-flex flex-row justify-content-evenly">
+                      <input type="radio" id="indigo" name="radioColour" value="indigo">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-indigo);" for="indigo"></label>
+
+                      <input type="radio" id="blue" name="radioColour" value="blue">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-blue);" for="blue"></label>
+                      
+                      <input type="radio" id="cyan" name="radioColour" value="cyan">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-cyan);" for="cyan"></label>                                                 
+                      
+                      <input type="radio" id="green" name="radioColour" value="Green">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-green);" for="green"></label>
+                                                                        
+                      <input type="radio" id="teal" name="radioColour" value="teal">
+                      <label class="btn dropbtn mx-1" style="background-color: var(--bs-teal);" for="teal"></label>                         
+                    </div>
+                  </ul>
+                </div>
+                <!--<div class="dropdown radio-toolbar mx-2">
+                  <input type="radio" id="radioBlue" name="radioColour" value="blue">
+                  <label class="btn dropbtn" style="background-color: var(--bs-blue);" for="radioBlue"></label>
+                  <div class="dropdown-content dropdown-content-colorblock">
                     <div>
-                      <button class="btn dropbtn" style="background-color: var(--ut-yellow)" data-bs-toggle="tooltip" title="Yellow"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-orange)" data-bs-toggle="tooltip" title="Orange"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-red)" data-bs-toggle="tooltip" title="Red"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-pink)" data-bs-toggle="tooltip" title="Pink"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-lavender)" data-bs-toggle="tooltip" title="Lavender"></button>
+                      <input type="radio" id="radioYellow" name="radioColour" value="yellow" checked>
+                      <label class="btn dropbtn" style="background-color: var(--bs-yellow);" for="radioYellow"></label>
+
+                      <input type="radio" id="radioOrange" name="radioColour" value="orange">
+                      <label class="btn dropbtn" style="background-color: var(--bs-orange);" for="radioOrange"></label>
+
+                      <input type="radio" id="radioRed" name="radioColour" value="red">
+                      <label class="btn dropbtn" style="background-color: var(--bs-red);" for="radioRed"></label>
+
+                      <input type="radio" id="radioPink" name="radioColour" value="pink">
+                      <label class="btn dropbtn" style="background-color: var(--bs-pink);" for="radioPink"></label>                       
+                      
+                      <input type="radio" id="radioPurple" name="radioColour" value="purple">
+                      <label class="btn dropbtn" style="background-color: var(--bs-purple);" for="radioPurple"></label>
+
                     </div>
                     <div>
-                      <button class="btn dropbtn" style="background-color: var(--ut-purple)" data-bs-toggle="tooltip" title="Purple"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-blue)" data-bs-toggle="tooltip" title="Blue"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-cyan)" data-bs-toggle="tooltip" title="Cyan"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-green)" data-bs-toggle="tooltip" title="Green"></button>
-                      <button class="btn dropbtn" style="background-color: var(--ut-teal)" data-bs-toggle="tooltip" title="Light Green"></button>
-                    </div>  
-                  </div>
-                </div>
-                
-              </td>
-              <td><button class="btn hover-line" type="button" onclick="myFunction3()"><i class="material-icons">create</i>Edit</button></td>
-              <td><button class="btn hover-line" type="button" id="savecolour" onclick="saveButton()" disabled> Save change</button></td>
-            </tr>
+                      <input type="radio" id="radioIndigo" name="radioColour" value="indigo">
+                      <label class="btn dropbtn" style="background-color: var(--bs-indigo);" for="radioIndigo"></label>
 
+                      <input type="radio" id="radioBlue" name="radioColour" value="blue">
+                      <label class="btn dropbtn" style="background-color: var(--bs-blue);" for="radioBlue"></label>
+                      
+                      <input type="radio" id="radioCyan" name="radioColour" value="cyan">
+                      <label class="btn dropbtn" style="background-color: var(--bs-cyan);" for="radioCyan"></label>                                                 
+                      
+                      <input type="radio" id="radioGreen" name="radioColour" value="Green">
+                      <label class="btn dropbtn" style="background-color: var(--bs-green);" for="radioGreen"></label>
+                                                                        
+                      <input type="radio" id="radioTeal" name="radioColour" value="teal">
+                      <label class="btn dropbtn" style="background-color: var(--bs-teal);" for="radioTeal"></label>                         
+                    </div>
+                  </div>
+                </div>-->
+              </td>
+            </tr>
+          </table>
+          <hr>
+
+          <h5 class="header-about">Security</h5>
+          <table>
             <tr>
               <td>Password:</td>
-              <td><input class="form-control" type="password" id="pwd" required disabled="true" value="Qwerty#1"></td>
+              <td><input style="margin-left: 10px;" class="form-control" type="password" id="pwd" required disabled="true" value="Qwerty#1"></td>
               <!-- Button trigger modal -->
               <td><button type="button" class="btn hover-line" data-bs-toggle="modal" data-bs-target="#editpwd"><i class="material-icons">create</i>Edit</button></td>
             </tr>
           </table>
+          
           <hr>
 
           <!-- Modal Password-->
@@ -185,7 +247,7 @@
             </div>
           </div>
 
-          <h5 class="header-about">Account Settings</h5>
+          <h5 class="header-about">Delete account</h5>
           <p>Please select a reason why you want to delete your account:</p>
           <form>
             <div class="checkbox checkbox-option">
@@ -243,11 +305,6 @@
         function myFunction2() {
           document.getElementById("prename").disabled = false;
           document.getElementById("saveprename").disabled = false;
-        }
-
-        function myFunction3() {
-          document.getElementById("colour").disabled = false;
-          document.getElementById("savecolour").disabled = false;
         }
 
         function saveButton() {
