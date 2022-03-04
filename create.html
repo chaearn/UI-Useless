@@ -155,27 +155,46 @@
       </symbol>
     </svg>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0 sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0">
       <div class="container-fluid">
         <a class="navbar-brand px-5" href="main.html">
           <svg class="bi me-2" width="147.283" height="19" role="img" aria-label="uselessthings"><use xlink:href="#uselessthings"/></svg>
         </a>
+
+        
 
         <button class="navbar-toggler px-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex flex-fill justify-content-end align-items-center">
-            <a class="nav-link mx-2 active" aria-current="page" href="main.html">UT Square</a>
-            <a class="nav-link mx-2" href="helpboard-thing.html">Help Board</a>
-            <a class="nav-link mx-2" href="mythings.html">My Things</a>
+            <a class="nav-link mx-2" aria-current="page" href="main.html">U Things</a>
+            <a class="nav-link mx-2" href="helpboard.html">Help Board</a>
+            <a class="nav-link mx-2 active" href="mythings.html">My Things</a>
             <!--<a class="nav-link disabled">Disabled</a>-->
-            <button type="button" class="btn btn-primary ms-3">+ Create New</button>
-          <button type="button" class="btn btn-outline-secondary ms-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21.062" viewBox="0 0 22 21.062" class="pb-1"><g transform="translate(0 0.53)"><rect width="4" height="4" transform="translate(9 14.966)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><path d="M526.375,284.188a6.188,6.188,0,1,0-10.175,4.727,4.7,4.7,0,0,1,1.667,3.591v.189h4.641v-.185a4.914,4.914,0,0,1,1.758-3.674A6.164,6.164,0,0,0,526.375,284.188Z" transform="translate(-509.187 -277.304)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(20 7.966)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(0 7.966)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(17.016 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(3.344)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(3.344 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(17.016)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><path d="M523.094,301A1.547,1.547,0,0,1,520,301Z" transform="translate(-510.547 -282.515)" fill="#fcee21" stroke="#fcee21" stroke-width="1"/></g></svg>
-          </button>
+            <a class="nav-btn btn btn-primary ms-3" href="create.html">+ Create New</a>
+            <button type="button" class="nav-btn btn btn-outline-secondary ms-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21.062" viewBox="0 0 22 21.062" class="pb-1"><g transform="translate(0 0.53)"><rect width="4" height="4" transform="translate(9 14.966)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><path d="M526.375,284.188a6.188,6.188,0,1,0-10.175,4.727,4.7,4.7,0,0,1,1.667,3.591v.189h4.641v-.185a4.914,4.914,0,0,1,1.758-3.674A6.164,6.164,0,0,0,526.375,284.188Z" transform="translate(-509.187 -277.304)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(20 7.966)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(0 7.966)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(17.016 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(3.344)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(3.344 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(17.016)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><path d="M523.094,301A1.547,1.547,0,0,1,520,301Z" transform="translate(-510.547 -282.515)" fill="#fcee21" stroke="#fcee21" stroke-width="1"/></g></svg>
+            </button>
           <div class="divider me-3 ms-4"></div>
-          <button type="button" class="profile btn btn-primary ms-2">C</button>
+          <!--<button type="button" class="profile btn btn-primary ms-2">C</button>-->
+          <div class="dropdown nav">
+            <!--<button type="button" class="profile btn btn-primary ms-2 dropdown-toggle" data-bs-toggle="dropdown">C</button>-->
+            <button type="button" class="profile btn btn-primary ms-2" data-bs-toggle="dropdown">C</button>
+            <div class="dropdown-content">
+              <a class="dropdown-item my-3" href="uter.html">My UTer page</a>
+              <a class="dropdown-item my-3" href="setting.html">Account & settings</a>
+              <hr class="dropdown-divider" style="margin-block: 1.5rem;">
+              <a class="dropdown-item my-3" href="login.html">Log out</a>
+            </div>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="uter.html">My UTer page</a>
+              <a class="dropdown-item" href="setting.html">Account & settings</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="login.html">Log out</a>
+            </div>
+            
+          </div>
           </div>
         </div>
           
@@ -468,39 +487,72 @@
                 <div class="mb-4">
                   <div id="Step7" class="form-subhead pb-3">Creative Techniques</div>
                   <div class="justify-content-center pb-3">
-                    <button class="rounded-pill txtCreative isBlue">
-                      Brainstorming
-                    </button>
-                    <button class="rounded-pill txtCreative isPurple">
-                      Storyboarding
-                    </button>
-                    <button class="rounded-pill txtCreative isLavender">
-                      Mind Mapping
-                    </button>
-                    <button class="rounded-pill txtCreative isPink">
-                      Random input
-                    </button>
-                    <button class="rounded-pill txtCreative isRed">
-                      Metaphorical thinking
-                    </button>
-                    <button class="rounded-pill txtCreative isOrange">
-                      Mood board
-                    </button>
-                    <button class="rounded-pill txtCreative isYellow">
-                      Brain shifter
-                    </button>
-                    <button class="rounded-pill txtCreative isGreen">
-                      The insights game
-                    </button>
-                    <button class="rounded-pill txtCreative isTeal">
-                      Picture association
-                    </button>
-                    <button class="rounded-pill txtCreative isCyan">
-                      Change perspective
-                    </button>
-                    <button class="rounded-pill txtCreative isBlue">
-                      Role play
-                    </button>
+                    <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="Brainstorming" id="Brainstorming" >
+                      <label class="form-check-label is--blue" for="Brainstorming">
+                        Brainstorming
+                      </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="Storyboarding" id="Storyboarding" checked>
+                        <label class="form-check-label is--purple" for="Storyboarding">
+                            Storyboarding
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="MindMapping" id="MindMapping">
+                        <label class="form-check-label is--lavender" for="MindMapping">
+                            Mind Mapping
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="RandomInput" id="RandomInput">
+                        <label class="form-check-label is--pink" for="RandomInput">
+                            Random Input
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="MetaphoricalThinkings" id="MetaphoricalThinkings">
+                        <label class="form-check-label is--red" for="MetaphoricalThinkings">
+                            Metaphorical Thinkings
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="MoodBoard" id="MoodBoard" checked>
+                        <label class="form-check-label is--orange" for="MoodBoard">
+                            Mood Board
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="BrainShifter" id="BrainShifter" checked>
+                        <label class="form-check-label is--yellow" for="BrainShifter">
+                            Brain Shifter
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="InsightsGame" id="InsightsGame">
+                        <label class="form-check-label is--green" for="InsightsGame">
+                            The Insights Game
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="PictureAssociation" id="PictureAssociation" checked>
+                        <label class="form-check-label is--teal" for="PictureAssociation">
+                            Picture Association
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="ChangePerspective" id="ChangePerspective" checked>
+                        <label class="form-check-label is--cyan" for="ChangePerspective">
+                            Change Perspective
+                        </label>
+                    </div>
+                    <div class="form-check creative-tech">
+                        <input class="form-check-input" type="checkbox" value="RolePlay" id="RolePlay" checked>
+                        <label class="form-check-label is--blue" for="RolePlay">
+                            Role Play
+                        </label>
+                    </div>
                   </div>
 
                   <div id="Step7" class="form-subhead pb-3 mt-5">Making Techniques</div>
@@ -612,37 +664,62 @@
                   <div>
                     <div class="mySlides">
                       <img class="resize" src="assets/img/Soft High Heel1.jpeg" style="width:100%;">
+                      <div class="d-none no-img d-flex justify-content-center align-items-center">
+                        <svg class="bi" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg> 
+                      </div>
                     </div>
                   
                     <div class="mySlides">
                       <img class="resize" src="assets/img/Mobile stand-back.jpeg" style="width:100%">
+                      <div class="d-none no-img d-flex justify-content-center align-items-center">
+                        <svg class="bi" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg> 
+                      </div>
                     </div>
                   
                     <div class="mySlides">
                       <img class="resize"src="assets/img/Mobile stand-front.jpeg" style="width:100%">
+                      <div class="d-none no-img d-flex justify-content-center align-items-center">
+                        <svg class="bi" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg> 
+                      </div>
                     </div>
                       
                     <div class="mySlides">
-                      <img class="resize"src="assets/img/Soft Pencil resize2.jpg" style="width:100%">
+                      <img class="d-none resize"src="assets/img/Soft Pencil resize2.jpg" style="width:100%">
+                      <div class="no-img d-flex justify-content-center align-items-center">
+                        <svg class="bi" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg> 
+                      </div>
                     </div>
                   </div>
                 
-                  <div class="d-flex flex-row justify-content-between mt-3">
+                  <div class="d-flex column-gallery-thumb mt-3">
                     <div class="me-3 column-gallery-thumb d-flex justify-content-center align-items-center">
                       <img class="column-gallery-thumb demo cursor thumbnail-img" src="assets/img/Soft High Heel1.jpeg" onclick="currentSlide(1)" >
+                      <div class="d-none no-img-thumb d-flex justify-content-center align-items-center">
+                        <svg class="bi no-img-svg" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg>
+                      </div>
                     </div>
-                    <div class="me-3 column-gallery-thumb d-flex justify-content-center align-items-center">
+                    <div class="me-3 column-gallery-thumb">
                       <img class="column-gallery-thumb demo cursor thumbnail-img" src="assets/img/Mobile stand-back.jpeg" onclick="currentSlide(2)">
+                      <div class="d-none no-img-thumb d-flex justify-content-center align-items-center">
+                        <svg class="bi no-img-svg" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg>
+                      </div>
                     </div>
                     <div class="me-3 column-gallery-thumb">
                       <img class="column-gallery-thumb demo cursor  thumbnail-img" src="assets/img/Mobile stand-front.jpeg" onclick="currentSlide(3)">
+                      <div class="d-none no-img-thumb d-flex justify-content-center align-items-center">
+                        <svg class="bi no-img-svg" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg>
+                      </div>
                     </div>
                     <div class="column-gallery-thumb">
-                      <img class="column-gallery-thumb demo cursor thumbnail-img" src="assets/img/Soft Pencil resize2.jpg" onclick="currentSlide(4)">
+                      <img class="d-none column-gallery-thumb demo cursor  thumbnail-img" src="assets/img/Soft Pencil resize2.jpg" onclick="currentSlide(4)">
+                      <div class="no-img-thumb d-flex justify-content-center align-items-center">
+                        <svg class="bi no-img-svg" width="40" height="45.176" role="img" aria-label="imgicon"><use xlink:href="#imgicon"/></svg>
+                      </div>
                     </div>
+                    
                   </div>
                 </div>
-  
+    
                 <script>
                   var slideIndex = 1;
                   showSlides(slideIndex);
@@ -683,11 +760,30 @@
   
                 <!--************-TOOLS&MATERIALS *********-->
                 <p class="form-subhead pb-2 pt-3">Tools and Materials</p>
-                  <div>
-                    <button class="rounded-pill btn-fr-tools">Coding</button>
-                  <button class="rounded-pill btn-fr-tools">Graphic</button>
-                  <button class="rounded-pill btn-fr-tools">Wireframe</button>
-                  </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name your tools!" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                        <svg class="bi" width="16.372" height="16.372" role="img" aria-label="addicon"><use xlink:href="#addicon"/></svg>
+                        </span>
+                    </div>
+                    <div class="d-flex">
+                        <button class="rounded-pill txtTools d-flex align-items-center">
+                            Scissors
+                            <svg class="bi ms-2" width="13.698" height="13.698" role="img" aria-label="closeicon"><use xlink:href="#closeicon"/></svg>
+                        </button>
+                        <button class="rounded-pill txtTools d-flex align-items-center">
+                            Scissors
+                            <svg class="bi ms-2" width="13.698" height="13.698" role="img" aria-label="closeicon"><use xlink:href="#closeicon"/></svg>
+                        </button>
+                        <button class="rounded-pill txtTools d-flex align-items-center">
+                            Glue
+                            <svg class="bi ms-2" width="13.698" height="13.698" role="img" aria-label="closeicon"><use xlink:href="#closeicon"/></svg>
+                        </button>
+                        <button class="rounded-pill txtTools d-flex align-items-center">
+                            Papers
+                            <svg class="bi ms-2" width="13.698" height="13.698" role="img" aria-label="closeicon"><use xlink:href="#closeicon"/></svg>
+                        </button>
+                    </div>
               
                 <!--************END TOOLS&MATERIALS*******--->
                 <br>
@@ -730,10 +826,72 @@
                 <!--******* Creative Techniques *******-->
                 <div>         
                   <p class="form-subhead pb-2 pt-3">Creative Techniques</p>
-                  <p class="rounded-3 btn-creative-tech" style="border-color: var(--ut-lavender); color: var(--ut-lavender);">Brainstorming</p>
-                  <p class="rounded-3 btn-creative-tech" style="border-color: var(--ut-purple); color: var(--ut-purple);">Mood Boards</p>
-                  <p class="rounded-3 btn-creative-tech" style="border-color: var(--ut-blue); color: var(--ut-blue);">Mind mapping</p>
-                  <p class="rounded-3 btn-creative-tech" style="border-color: var(--ut-red); color: var(--ut-red);">Brain shifter</p>
+                  <div class="form-check creative-tech">
+                    <input class="form-check-input" type="checkbox" value="Brainstorming" id="Brainstorming" >
+                    <label class="form-check-label is--blue" for="Brainstorming">
+                      Brainstorming
+                    </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="Storyboarding" id="Storyboarding" checked>
+                      <label class="form-check-label is--purple" for="Storyboarding">
+                          Storyboarding
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="MindMapping" id="MindMapping">
+                      <label class="form-check-label is--lavender" for="MindMapping">
+                          Mind Mapping
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="RandomInput" id="RandomInput">
+                      <label class="form-check-label is--pink" for="RandomInput">
+                          Random Input
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="MetaphoricalThinkings" id="MetaphoricalThinkings">
+                      <label class="form-check-label is--red" for="MetaphoricalThinkings">
+                          Metaphorical Thinkings
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="MoodBoard" id="MoodBoard" checked>
+                      <label class="form-check-label is--orange" for="MoodBoard">
+                          Mood Board
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="BrainShifter" id="BrainShifter" checked>
+                      <label class="form-check-label is--yellow" for="BrainShifter">
+                          Brain Shifter
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="InsightsGame" id="InsightsGame">
+                      <label class="form-check-label is--green" for="InsightsGame">
+                          The Insights Game
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="PictureAssociation" id="PictureAssociation" checked>
+                      <label class="form-check-label is--teal" for="PictureAssociation">
+                          Picture Association
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="ChangePerspective" id="ChangePerspective" checked>
+                      <label class="form-check-label is--cyan" for="ChangePerspective">
+                          Change Perspective
+                      </label>
+                  </div>
+                  <div class="form-check creative-tech">
+                      <input class="form-check-input" type="checkbox" value="RolePlay" id="RolePlay" checked>
+                      <label class="form-check-label is--blue" for="RolePlay">
+                          Role Play
+                      </label>
+                  </div>
                 </div>
                 
                 <!--******* SKILLS *******-->

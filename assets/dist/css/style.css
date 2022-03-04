@@ -142,7 +142,7 @@ main {
     background-color: white;   
     width: 100vw; 
     height: 4.31em;
-    z-index: 10;
+    z-index: 1000;
     position: fixed;
     left: 0;
     right: 0;
@@ -370,6 +370,12 @@ main {
     border-radius: 0.52em;
     padding: 0.4rem 0.8rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, opcaity 0.15s ease-in-out;
+}
+
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    pointer-events: none;
+    background-color: var(--ut-md-grey);
+    opacity: .65;
 }
 
 .btn-primary {
@@ -648,7 +654,7 @@ svg {
     background-color: var(--ut-lavender);
     transition: box-shadow 0.15s ease-in-out;
 }
-.is--lavendar:hover {
+.is--lavender:hover {
     box-shadow: 0px 2px 8px 0px var(--ut-shadow-lavender) !important;
 }
 .sh--lavender {
@@ -979,6 +985,7 @@ a.move-menu {
     font-weight: 500;
     width: inherit;
     font-size: x-large;
+    text-align: start;
 }
 
 .card-title:hover {
@@ -1009,6 +1016,13 @@ a.move-menu {
     background-color: var(--ut-md-grey);
     color: white;
     font-weight: 400;
+    margin-block: 0;
+}
+
+@media (min-width: 992px) {
+    .nav-pills .nav-link {
+        margin-block: 0.4em;
+    }
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -1630,6 +1644,150 @@ textarea {
     font-weight: 500;
 }
 
+a.form-check.creative-tech {
+    text-decoration: none;
+}
+
+.form-check.creative-tech {
+    display: inline-flex;
+    padding-left: 0;
+}
+.form-check.creative-tech > input {
+    display: none;
+}
+
+.form-check.creative-tech > input:disabled + label {
+    opacity: 1;
+}
+
+
+.form-check.creative-tech > label {
+    border: 2px solid var(--ut-md-grey);
+    border-radius: 18px;
+    padding: 0.5rem 1.17rem;
+    margin-inline: 0.2rem;
+    margin-block: 0.4rem;
+    color: var(--ut-md-grey);
+    background-color: transparent;
+    font-weight: 500;
+    box-shadow: none !important;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--blue {
+    border-color: var(--ut-blue);
+    color: var(--ut-blue);
+    background-color: #3562fa20;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--purple {
+    border-color: var(--ut-purple);
+    color: var(--ut-purple);
+    background-color: #835ad020;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--lavender {
+    border-color: var(--ut-lavender);
+    color: var(--ut-lavender);
+    background-color: #8888ff20;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--pink {
+    border-color: var(--ut-pink);
+    color: var(--ut-pink);
+    background-color: #fab4b920;
+}
+
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--red {
+    border-color: var(--ut-red);
+    color: var(--ut-red);
+    background-color: #f64d4d20;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--orange {
+    border-color: var(--ut-orange);
+    color: var(--ut-orange);
+    background-color: #e0823220;
+
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--yellow {
+    border-color: var(--ut-yellow);
+    color: var(--ut-yellow);
+    background-color: #ffce2b20;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--green {
+    border-color: var(--ut-green);
+    color: var(--ut-green);
+    background-color: #2ccb6320;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--teal {
+    border-color: var(--ut-teal);
+    color: var(--ut-teal);
+    background-color: #aae03220;
+}
+
+.form-check.creative-tech > .form-check-input:checked + .form-check-label.is--cyan {
+    border-color: var(--ut-cyan);
+    color: var(--ut-cyan);
+    background-color: #49cded20;
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--blue {
+    border-color: var(--ut-blue);
+    color: var(--ut-blue);
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--purple {
+    border-color: var(--ut-purple);
+    color: var(--ut-purple);
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--lavender {
+    border-color: var(--ut-lavender);
+    color: var(--ut-lavender);
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--pink {
+    border-color: var(--ut-pink);
+    color: var(--ut-pink);
+}
+
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--red {
+    border-color: var(--ut-red);
+    color: var(--ut-red);
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--orange {
+    border-color: var(--ut-orange);
+    color: var(--ut-orange);
+
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--yellow {
+    border-color: var(--ut-yellow);
+    color: var(--ut-yellow);
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--green {
+    border-color: var(--ut-green);
+    color: var(--ut-green);
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--teal {
+    border-color: var(--ut-teal);
+    color: var(--ut-teal);
+}
+
+.form-check.creative-tech:hover > .form-check-input + .form-check-label.is--cyan {
+    border-color: var(--ut-cyan);
+    color: var(--ut-cyan);
+}
+
 .btn-creative-tech.txtCreative {
     border: 2px solid var(--ut-md-grey);
     padding: 0.5rem 1.17rem;
@@ -1972,4 +2130,9 @@ textarea {
     .item-story.more:before {
         display: none;
     }
+}
+
+.page-link {
+    color: var(--ut-blue);
+    padding: 0.35rem 1rem;
 }

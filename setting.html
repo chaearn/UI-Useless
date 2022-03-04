@@ -57,7 +57,7 @@
     <!--Navbar--> 
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0">
       <div class="container-fluid">
-        <a class="navbar-brand px-5" href="#">
+        <a class="navbar-brand px-5" href="main.html">
           <svg class="bi me-2" width="147.283" height="19" role="img" aria-label="uselessthings"><use xlink:href="#uselessthings"/></svg>
         </a>
 
@@ -68,25 +68,32 @@
         </button>
         <div class="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex flex-fill justify-content-end align-items-center">
-            <a class="nav-link mx-2 active" aria-current="page" href="#">U Thing</a>
-            <a class="nav-link mx-2" href="#">Help Board</a>
-            <a class="nav-link mx-2" href="#">My Things</a>
+            <a class="nav-link mx-2" aria-current="page" href="main.html">U Things</a>
+            <a class="nav-link mx-2" href="helpboard.html">Help Board</a>
+            <a class="nav-link mx-2 active" href="mythings.html">My Things</a>
             <!--<a class="nav-link disabled">Disabled</a>-->
-            <a class="btn btn-primary ms-3" href="file:///Users/chaearn/Documents/GitHub/UT-Square/create.html">+ Create New</a>
-          <button type="button" class="btn btn-outline-secondary ms-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21.062" viewBox="0 0 22 21.062" class="pb-1"><g transform="translate(0 0.53)"><rect width="4" height="4" transform="translate(9 14.966)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><path d="M526.375,284.188a6.188,6.188,0,1,0-10.175,4.727,4.7,4.7,0,0,1,1.667,3.591v.189h4.641v-.185a4.914,4.914,0,0,1,1.758-3.674A6.164,6.164,0,0,0,526.375,284.188Z" transform="translate(-509.187 -277.304)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(20 7.966)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(0 7.966)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(17.016 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(3.344)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(3.344 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(17.016)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><path d="M523.094,301A1.547,1.547,0,0,1,520,301Z" transform="translate(-510.547 -282.515)" fill="#fcee21" stroke="#fcee21" stroke-width="1"/></g></svg>
-          </button>
+            <a class="nav-btn btn btn-primary ms-3" href="create.html">+ Create New</a>
+            <button type="button" class="nav-btn btn btn-outline-secondary ms-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21.062" viewBox="0 0 22 21.062" class="pb-1"><g transform="translate(0 0.53)"><rect width="4" height="4" transform="translate(9 14.966)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><path d="M526.375,284.188a6.188,6.188,0,1,0-10.175,4.727,4.7,4.7,0,0,1,1.667,3.591v.189h4.641v-.185a4.914,4.914,0,0,1,1.758-3.674A6.164,6.164,0,0,0,526.375,284.188Z" transform="translate(-509.187 -277.304)" fill="none" stroke="#fcee21" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(20 7.966)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5"/><line x2="2" transform="translate(0 7.966)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(17.016 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x2="1.641" y2="1.641" transform="translate(3.344)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(3.344 13.673)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.641" y2="1.641" transform="translate(17.016)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/><path d="M523.094,301A1.547,1.547,0,0,1,520,301Z" transform="translate(-510.547 -282.515)" fill="#fcee21" stroke="#fcee21" stroke-width="1"/></g></svg>
+            </button>
           <div class="divider me-3 ms-4"></div>
           <!--<button type="button" class="profile btn btn-primary ms-2">C</button>-->
-          <div class="dropdown">
+          <div class="dropdown nav">
             <!--<button type="button" class="profile btn btn-primary ms-2 dropdown-toggle" data-bs-toggle="dropdown">C</button>-->
-            <button type="button" class="profile btn btn-primary ms-2">C</button>
+            <button type="button" class="profile btn btn-primary ms-2" data-bs-toggle="dropdown">C</button>
             <div class="dropdown-content">
-              <a class="dropdown-item" href="#">My UTer page</a>
-              <a class="dropdown-item" href="#">Account & settings</a>
-              <hr class="dropdown-divider">
-              <a class="dropdown-item" href="#">Log out</a>
+              <a class="dropdown-item my-3" href="uter.html">My UTer page</a>
+              <a class="dropdown-item my-3" href="setting.html">Account & settings</a>
+              <hr class="dropdown-divider" style="margin-block: 1.5rem;">
+              <a class="dropdown-item my-3" href="login.html">Log out</a>
             </div>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="uter.html">My UTer page</a>
+              <a class="dropdown-item" href="setting.html">Account & settings</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="login.html">Log out</a>
+            </div>
+            
           </div>
           </div>
         </div>
@@ -281,7 +288,7 @@
                   </div>
                   <div class="modal-body">
                     <p>Please enter your password:</p>
-                    <input class="form-control" style="border: 1px solid var(--ut-light-grey);" type="password" id="confirmpwd" value="">
+                    <input class="form-control" style="border: 1px solid var(--ut-light-grey);" type="password" id="confirmpwd" placeholder="We're sorry to see you go."value="">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Delete account</button>

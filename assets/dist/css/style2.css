@@ -53,6 +53,7 @@
   background-color: var(--ut-helpme);
   color: white;
   align-items: flex-start;
+  border-color: var(--ut-helpme);
 }
 
 textarea.form-control.problem {
@@ -261,6 +262,20 @@ img.resize {
   }
 }
 
+.no-img {
+  width: 100%;
+  height: 18em;
+  border-radius: 0.52em;
+  background-color: white;
+  color: var(--ut-primary);
+}
+
+@media (min-width: 992px) {
+  .no-img {
+    height: 25em;
+  }
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -289,11 +304,11 @@ img.resize {
 
 .column-gallery-thumb {
   position: relative;
-    width: 100%;
-    height: 4em;
-    object-fit: cover;
-    border-radius: 10px;
-    object-fit: cover;
+  width: 100%;
+  height: 4em;
+  object-fit: cover;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .thumbnail-img {
@@ -301,9 +316,29 @@ img.resize {
   border-radius: 0.52em;
 }
 
+.no-img-thumb {
+  width: 100%;
+  height: 4em;
+  border-radius: 0.52em;
+  background-color: white;
+  color: var(--ut-primary);
+}
+
+.no-img-svg {
+  transform: scale(0.55);
+}
+
 @media (min-width: 992px) {
   .column-gallery-thumb {
     height: 6em;
+  }
+
+  .no-img-thumb {
+    height: 6em;
+  }
+
+  .no-img-svg {
+    transform: scale(0.7);
   }
 }
 
@@ -524,8 +559,8 @@ grid-template-areas:
   "problem"
   "suggest"
   "story"
-  "steps"
-  "tech";
+  "tech"
+  "steps";
 }
 
 
@@ -540,7 +575,7 @@ grid-template-areas:
       "image story"
       "image steps"
       "tech steps"
-      "chat steps";
+      "chat chat";
     grid-template-rows: auto auto auto auto;
   }
 
@@ -553,7 +588,7 @@ grid-template-areas:
       "image story"
       "tech steps"
       "tech steps"
-      "chat steps";
+      "chat chat";
     grid-template-rows: auto auto auto auto;
   }
 
@@ -578,8 +613,8 @@ grid-template-areas:
       "image  name"
       "image  problem"
       "story  suggest"
-      "steps  suggest"
-      "tech   suggest";
+      "tech   suggest"
+      "steps  suggest";
       grid-template-rows: auto auto auto auto auto;
   }
 
@@ -841,6 +876,7 @@ padding-bottom: 1rem;
 a.footer-link {
   color: var(--ut-md-grey);
   text-decoration: none;
+  padding-inline: 0.35rem;
 }
 
 a.footer-link:hover {
